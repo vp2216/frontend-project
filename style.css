@@ -1,0 +1,294 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.head {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  background: #702dff;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.outer-image {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1.5rem 0 4rem 0;
+  position: absolute;
+  width: 100%;
+  top: 0;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+
+.nav-btns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.hot span {
+  background: #da310c;
+  border-radius: 9999px;
+  padding: 0 0.5rem;
+}
+
+.cart {
+  position: relative;
+}
+
+.cart-count {
+  position: absolute;
+  top: -0.2rem;
+  background: white;
+  right: -0.2rem;
+  color: black;
+  font-size: 0.5rem;
+  width: 0.7rem;
+  height: 0.7rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  font-weight: 700;
+}
+
+.coustom-text {
+  text-transform: uppercase;
+  color: #f4c01e;
+}
+
+.header-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1.7rem;
+  width: 100%;
+  position: absolute;
+  bottom: -4rem;
+}
+
+.inner-image {
+  width: 30%;
+  bottom: -3rem;
+  z-index: 1;
+}
+
+.shadow {
+  width: 30%;
+  bottom: -5.5rem;
+  position: absolute;
+}
+
+.header-content-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  border: 0;
+  border-radius: 15px;
+  padding: 0.7rem 1rem;
+  color: #631cfb;
+  font-weight: 700;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.bag-img {
+  cursor: pointer;
+  height: 100%;
+}
+
+.content-start {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.content-heading {
+  font-weight: 800;
+  font-size: 2rem;
+  width: 50%;
+  text-align: center;
+}
+
+.content-para {
+  width: 40%;
+  text-align: center;
+}
+
+.container-image {
+  width: 1.8rem;
+}
+
+.info {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #efefef;
+}
+
+.container-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  height: 25rem;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1.5rem;
+  flex-direction: column;
+  width: 20%;
+  height: 100%;
+  border-radius: 25px;
+  padding: 1.5rem 2rem;
+  box-sizing: border-box;
+  background: white;
+}
+
+.container-middle {
+  background: transparent;
+  border: 1px dashed #8f8f8f;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+}
+
+.container-content-middle {
+  justify-content: center;
+  align-items: center;
+}
+
+.left-arrow {
+  position: absolute;
+  top: 3rem;
+  left: -2rem;
+  width: 5rem;
+}
+
+.right-arrow {
+  position: absolute;
+  bottom: 3rem;
+  right: -2rem;
+  width: 5rem;
+}
+
+.container-content-middle-head {
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.container-content {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.container-content-head {
+  font-weight: 700;
+}
+
+.container-content-para {
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: #6f6f6f;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  flex-direction: column;
+  padding: 2rem 0;
+  font-weight: 600;
+}
+
+.footer-content-1 {
+  color: #828282;
+}
+
+.footer-images {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  width: 40vw;
+  flex-wrap: wrap;
+}
+
+.footer-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  background: #000;
+  color: white;
+  padding: 1rem;
+  border-radius: 9999px;
+}
+
+.btn-bg {
+  background: white;
+  border-radius: 50%;
+  width: 1rem;
+  height: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-image {
+  width: 2rem;
+}
+
+.footer-copyright {
+  margin-top: 2.5rem;
+  color: #828282;
+}
+
+.bg-images {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.plane {
+  position: absolute;
+  top: 29%;
+  right: 5%;
+  transform: rotate(14deg);
+}
