@@ -16,17 +16,14 @@
   height: 100vh;
   position: relative;
   background: #702dff;
+  background-image: url("./Assets/outer-image.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   color: white;
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.outer-image {
-  width: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
 }
 
 nav {
@@ -84,20 +81,26 @@ nav {
 
 .header-content {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   flex-direction: column;
-  gap: 1.7rem;
+  gap: 1.5rem;
   width: 100%;
   position: absolute;
-  top: 7rem;
+  top: 6rem;
+  bottom: -3rem;
+}
+
+.stars {
+  width: 100%;
+  text-align: center;
+  position: relative;
 }
 
 .inner-image {
   width: 30%;
   bottom: -3rem;
-  z-index: 1;
-  box-shadow: 0 5px 10px black;
+  box-shadow: 0 5px 15px black;
 }
 
 .header-content-btn {
@@ -275,17 +278,89 @@ nav {
   color: #828282;
 }
 
-.menu{
+.menu {
   display: none;
 }
 
+.star1 {
+  position: absolute;
+  right: 30%;
+  top: 60%;
+}
+
+.star2 {
+  position: absolute;
+  left: 30%;
+  top: 0;
+}
+
+.lines {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 0.3rem;
+  position: absolute;
+}
+
+.line-design-combined {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.line1 {
+  width: 36.53px;
+  height: 2px;
+}
+
+.line2 {
+  width: 10%;
+  height: 2px;
+}
+
+.line-design-1 {
+  padding-right: 5px;
+}
+
+.line-design-2 {
+  padding-left: 5px;
+}
+
+.lines-1 {
+  right: 25%;
+  top: 20%;
+}
+
+.lines-2 {
+  left: 25%;
+  top: 40%;
+}
+
 @media screen and (max-width: 1100px) {
-  .container{
+  .container {
     width: 30%;
   }
 
   .inner-image {
     width: 40%;
+  }
+
+  .lines-1 {
+    right: 20%;
+  }
+
+  .lines-2 {
+    left: 20%;
+  }
+
+  .star1 {
+    right: 25%;
+  }
+
+  .star2 {
+    left: 25%;
   }
 }
 
@@ -331,14 +406,46 @@ nav {
     bottom: -1rem;
   }
 
-  .menu{
+  .menu {
     display: block;
     width: 2rem;
+  }
+
+  .lines-1 {
+    right: 10%;
+  }
+
+  .lines-2 {
+    left: 10%;
+  }
+
+  .star1 {
+    right: 15%;
+  }
+
+  .star2 {
+    left: 15%;
   }
 }
 
 @media screen and (max-width: 600px) {
-.inner-image {
+  .inner-image {
     width: 70%;
+  }
+
+  .lines-1 {
+    display: none;
+  }
+
+  .lines-2 {
+    display: none;
+  }
+
+  .star1 {
+    display: none;
+  }
+
+  .star2 {
+    display: none;
   }
 }
